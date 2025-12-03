@@ -1,0 +1,16 @@
+/* GLOBAL LAYOUT FIXES */
+
+/* Prevent pages hiding under the fixed navbar */
+.page-container {
+  padding-top: 2px; /* Matches your navbar height + spacing */
+  min-height: 80vh;
+}
+
+/* Body default style */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: #ffffff;
+  color: #111827;
+}

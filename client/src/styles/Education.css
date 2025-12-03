@@ -1,0 +1,135 @@
+/* =========================================================
+   EDUCATION PAGE — CLEAN PROFESSIONAL DESIGN
+   ========================================================= */
+.education-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 110px auto 60px auto;
+  padding: 0 20px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 45px;
+  color: #1e3a8a;
+  font-weight: 700;
+}
+
+/* ============================
+   EDUCATION CARD SECTIONS
+   ============================ */
+.education-section {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 35px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+  border-left: 5px solid #1e3a8a;
+  transition: 0.3s ease;
+}
+
+.education-section.alt {
+  border-left: 5px solid #3b82f6;
+}
+
+/* Hover effect */
+.education-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================
+   IMAGES
+   ============================ */
+.education-photo {
+  width: 40%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================
+   TEXT CONTENT
+   ============================ */
+.education-text {
+  width: 60%;
+}
+
+.education-text h2 {
+  font-size: 1.8rem;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.education-text h3 {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Read More button */
+.read-more-btn {
+  background: #1e3a8a;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.read-more-btn:hover {
+  background: #3b82f6;
+}
+
+/* PDF LINK */
+.pdf-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #0d3b99;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.pdf-link:hover {
+  background: #3b82f6;
+}
+
+/* ============================
+   MOBILE RESPONSIVE
+   ============================ */
+@media (max-width: 900px) {
+  .education-section {
+    flex-direction: column;
+  }
+
+  .education-photo,
+  .education-text {
+    width: 100%;
+  }
+}
+
+/* Fade animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s forwards ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

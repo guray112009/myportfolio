@@ -1,0 +1,207 @@
+/* ============================================================
+   ADMIN PAGE GLOBAL WRAPPER
+   ============================================================ */
+.admin-page,
+.admin-page-container {
+  padding: 120px 40px 60px; 
+  background: #f4f7ff;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Center all admin content */
+.admin-page-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ============================================================
+   TITLES
+   ============================================================ */
+.admin-title {
+  text-align: center;
+  color: #0f2c7d;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.admin-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #4b5563;
+  margin-bottom: 50px;
+}
+
+/* ============================================================
+   FORM FIX — BEAUTIFUL SPACING + CENTERED
+   ============================================================ */
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 650px;
+  margin: 0 auto 60px;   /* FIXED SPACING */
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.admin-form input,
+.admin-form textarea {
+  padding: 14px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+  background: #ffffff;
+}
+
+.admin-form textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.admin-form button {
+  background: #1e3a8a;
+  color: white;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+
+.admin-form button:hover {
+  background: #3b82f6;
+}
+
+/* Message styling */
+.auth-message {
+  text-align: center;
+  font-size: 1rem;
+  color: #0f2c7d;
+  margin-top: -30px;
+  margin-bottom: 20px;
+}
+
+/* ============================================================
+   TABLE — FIXED SPACING + CENTERED + CLEAN
+   ============================================================ */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 50px auto;
+  max-width: 1100px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 15px 20px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.97rem;
+}
+
+.admin-table th {
+  background: #0f2c7d;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.admin-table tr:hover {
+  background: #eef2ff;
+}
+
+/* ============================================================
+   EDIT + DELETE BUTTONS
+   ============================================================ */
+.edit-btn,
+.delete-btn {
+  padding: 7px 16px;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.edit-btn {
+  background: #1e40af;
+  color: white;
+  margin-right: 8px;
+}
+
+.edit-btn:hover {
+  background: #3b82f6;
+}
+
+.delete-btn {
+  background: #b91c1c;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #ef4444;
+}
+
+/* ============================================================
+   DASHBOARD CARDS
+   ============================================================ */
+.admin-grid {
+  max-width: 1100px;
+  margin: 0 auto 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.admin-card {
+  background: #ffffff;
+  padding: 30px 25px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: 0.2s ease-in-out;
+}
+
+.admin-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.admin-card h2 {
+  font-size: 1.3rem;
+  color: #1e3a8a;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.admin-card p {
+  color: #4a5568;
+  font-size: 0.95rem;
+}
+
+/* Dashboard Card Button */
+.admin-btn {
+  margin-top: 18px;
+  padding: 10px 22px;
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  font-size: 0.95rem;
+}
+
+.admin-btn:hover {
+  background: #3b82f6;
+}

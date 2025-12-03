@@ -1,0 +1,157 @@
+/* =========================================================
+   SERVICES PAGE — CLEAN MODERN DESIGN
+   ========================================================= */
+
+.services-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 110px auto 60px auto;
+  padding: 0 20px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 45px;
+  color: #1e3a8a;
+  font-weight: 700;
+}
+
+/* ============================
+   SERVICE SECTION (CARD)
+   ============================ */
+.services-section {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 35px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+  border-left: 5px solid #1e3a8a;
+  transition: 0.3s ease;
+}
+
+.services-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Alternate color for variety */
+.services-section.alt {
+  border-left: 5px solid #3b82f6;
+}
+
+/* ============================
+   SERVICE IMAGE
+   ============================ */
+.services-photo {
+  width: 40%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.12);
+}
+
+/* ============================
+   SERVICE TEXT
+   ============================ */
+.services-text {
+  width: 60%;
+}
+
+.services-text h2 {
+  font-size: 1.8rem;
+  color: #1e3a8a;
+  margin-bottom: 8px;
+}
+
+.services-text h3 {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.services-text p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+/* ============================
+   READ MORE BUTTON
+   ============================ */
+.read-more-btn {
+  background: #1e3a8a;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.read-more-btn:hover {
+  background: #3b82f6;
+}
+
+/* ============================
+   EXPANDED DETAILS
+   ============================ */
+.details {
+  margin-top: 10px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* ============================
+   MOBILE RESPONSIVE
+   ============================ */
+@media (max-width: 900px) {
+  .services-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services-photo,
+  .services-text {
+    width: 100%;
+  }
+
+  .services-photo {
+    height: 220px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .services-text h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ============================
+   FADE-IN ANIMATION
+   ============================ */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s forwards ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

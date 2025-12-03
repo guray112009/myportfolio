@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-root",
+  "version": "1.0.0",
+  "private": true,
+
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  },
+
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+
+    "server": "npm run dev --prefix backend",
+    "client": "npm start --prefix client",
+
+    "build": "npm run build --prefix client",
+    "start": "node backend/server.js"
+  }
+}

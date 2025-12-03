@@ -1,0 +1,97 @@
+/* MAIN FOOTER STYLES */
+.footer {
+  background-color: #1e3a8a; /* Dark blue */
+  color: white;
+  padding: 40px 20px 10px 20px;
+  margin-top: 50px;
+}
+
+/* CONTAINER */
+.footer-container {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* SECTION TITLES */
+.footer-section h3 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #dbeafe;
+  padding-bottom: 8px;
+}
+
+/* TEXT */
+.footer-section p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-section a {
+  color: #dbeafe;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+/* QUICK LINKS LIST */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+}
+
+.footer-section li a {
+  color: #ffffff;
+  transition: 0.2s;
+}
+
+.footer-section li a:hover {
+  color: #dbeafe;
+}
+
+/* SOCIAL ICONS */
+.social-icons a {
+  font-size: 1.8rem;
+  margin-right: 12px;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.3);
+  color: #dbeafe;
+}
+
+/* COPYRIGHT LINE */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 12px;
+  font-size: 0.9rem;
+}
+  
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
